@@ -277,3 +277,29 @@ form.addEventListener("submit", function (e) {
 //     form.reset();
 
 // });
+
+//new hamburger menu
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
+//new hamburger menu
+hamburger.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        hamburger.innerHTML = '<i class="fas fa-times"></i>';
+    }else{
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+    }
+
+});
