@@ -517,7 +517,15 @@ section {
     padding: 20px;
 
 }
+.project-card h6{
+    font-size: 20px;
 
+    font-weight: 600;
+
+    color: #ffffff;
+
+    padding: 20px;
+}
 
 
 .project-card p {
